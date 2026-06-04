@@ -1,47 +1,38 @@
 
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <title>AI Security Report</title>
-</head>
-<body>
+    <html>
+    <head>
+        <meta charset="utf-8">
+        <title>AI Security Report</title>
+    </head>
+    <body>
+        <h1>AI Security Report</h1>
 
-<h1>AI Destekli Ağ Güvenlik Raporu</h1>
+        <h2>Target</h2>
+        <p>scanme.nmap.org</p>
 
-<h2>M1 Port Tarama</h2>
-<pre>
-22 | ssh | 
-80 | http | 
-
-</pre>
-
-<h2>M6 Banner Grabbing</h2>
-<pre>
-22 -> SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2.13
+        <h2>Open Ports</h2>
+        <table border="1">
+        <tr><th>Port</th><th>Service</th><th>Version</th></tr>
+    <tr><td>22</td><td>ssh</td><td>6.6.1p1 Ubuntu 2ubuntu2.13</td></tr><tr><td>80</td><td>http</td><td>2.4.7</td></tr></table><h2>Banners</h2><pre>22 -> SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2.13
 
 80 -> No banner
+</pre><h2>AI Analysis</h2><pre>Açık port riskleri, servis zafiyetleri ve güvenlik önerileri analiz edelim.
 
-</pre>
+**Açık Port Riskleri:**
 
-<h2>AI Analizi</h2>
-<pre>
+- Port 22 (SSH) açık: Bu port, SSH sunucusu için kullanılan standart bir porttur. Ancak, SSH sunucusunun güncel olmadığını gösteren bir bilgi de var. SSH sunucusu 6.6.1p1 Ubuntu 2ubuntu2.13 sürümündedir. Bu sürüm, güvenlik açıkları ve hatalar içerebilir. SSH sunucusunu güncel bir sürüme güncellemek önerilir.
+- Port 80 (HTTP) açık: Bu port, web sunucusu için kullanılan standart bir porttur. Web sunucusu 2.4.7 sürümündedir. Bu sürüm, güvenlik açıkları ve hatalar içerebilir. Web sunucusunu güncel bir sürüme güncellemek önerilir.
 
-RİSK ANALİZİ:
+**Servis Zafiyetleri:**
 
-- Açık portlar saldırı yüzeyi oluşturur
-- Gereksiz servisler kapatılmalıdır
-- Güncel olmayan servisler risklidir
-- Banner bilgileri incelenmelidir
+- SSH sunucusu zafiyeti: SSH sunucusunun güncel olmadığını gösteren bir bilgi var. SSH sunucusu 6.6.1p1 Ubuntu 2ubuntu2.13 sürümündedir. Bu sürüm, güvenlik açıkları ve hatalar içerebilir.
+- Web sunucusu zafiyeti: Web sunucusu 2.4.7 sürümündedir. Bu sürüm, güvenlik açıkları ve hatalar içerebilir.
 
-Gelen veri:
-22 ssh 
-80 http 
-22 -> SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2.13
+**Güvenlik Önerileri:**
 
-80 -> No banner
+- SSH sunucusunu güncel bir sürüme güncelleyin: SSH sunucusu 6.6.1p1 Ubuntu 2ubuntu2.13 sürümündedir. Bu sürüm, güvenlik açıkları ve hatalar içerebilir. SSH sunucusunu güncel bir sürüme güncellemek önerilir.
+- Web sunucusunu güncel bir sürüme güncelleyin: Web sunucusu 2.4.7 sürümündedir. Bu sürüm, güvenlik açıkları ve hatalar içerebilir. Web sunucusunu güncel bir sürüme güncellemek önerilir.
+- SSH sunucusunun bannerını kontrol edin: SSH sunucusunun bannerı (banner) kontrol edilmelidir. Banner, SSH sunucusunun kimliğini ve sürümünü gösterir. Banner, bir saldırıya karşı savunma olarak kullanılabilir.
+- Web sunucusunun bannerını kontrol edin: Web sunucusunun bannerı kontrol edilmelidir. Banner, web sunucusunun kimliğini ve sürümünü gösterir. Banner, bir saldırıya karşı savunma olarak kullanılabilir.
 
-</pre>
-
-</body>
-</html>
+Genel olarak, SSH sunucusu ve web sunucusu güncel sürümlere güncellenmelidir. Ayrıca, SSH sunucusunun ve web sunucusunun bannerları kontrol edilmelidir.</pre></body></html>

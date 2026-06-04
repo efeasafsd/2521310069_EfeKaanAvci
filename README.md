@@ -4,6 +4,7 @@
 
 Ad Soyad: Efe Kaan Avcı
 Öğrenci No: 2521310069
+gethub linki https://github.com/efeasafsd/2521310069_EfeKaanAvci
 Tarih: 2026
 Seçilen Modül: M6 Banner Grabbing
 

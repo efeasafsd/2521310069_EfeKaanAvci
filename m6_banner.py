@@ -1,16 +1,12 @@
 import socket
 
-def grab_banner(ip, port):
+def grab_banner(target, port):
     try:
         s = socket.socket()
         s.settimeout(2)
-        s.connect((ip, port))
-
+        s.connect((target, port))
         banner = s.recv(1024).decode(errors="ignore")
         s.close()
-
-        return f"{port} -> {banner}"
-
+        return banner if banner else "No banner"
     except:
-        return f"{port} -> No banner"
-
+        return "No banner"
